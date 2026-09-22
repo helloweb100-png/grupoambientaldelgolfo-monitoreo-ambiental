@@ -1999,6 +1999,79 @@ main section[id] {
 }
 
 /* =========================================================
+   TEAM / QUIENES SOMOS
+   ========================================================= */
+.team-lead {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.team-lead .tag {
+  margin-top: 22px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line-2);
+  background: var(--line-2);
+}
+
+.team-card {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  padding: clamp(28px, 3vw, 36px) clamp(24px, 2.6vw, 32px);
+  background: var(--ink);
+  transition: background 0.4s ease;
+}
+
+.team-card:hover {
+  background: var(--wash-1);
+}
+
+.team-card-index {
+  color: var(--red);
+  font-family: var(--hw-display);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  font-variant-numeric: tabular-nums;
+}
+
+.team-card-name {
+  margin: 8px 0 0;
+  font-family: var(--hw-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.005em;
+}
+
+.team-card-role {
+  margin: 0 0 6px;
+  color: var(--sage);
+  font-family: var(--hw-acento);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.team-card-contact {
+  display: block;
+  color: var(--paper-muted);
+  font-size: 0.87rem;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.team-card-contact:hover {
+  color: var(--red);
+}
+
+/* =========================================================
    FOOTER
    ========================================================= */
 .site-footer {
@@ -3184,7 +3257,8 @@ main section[id] {
           <li><a href="#inicio" class="nav-link"><span class="nav-link-index">01</span><span class="nav-link-text">Inicio</span></a></li>
           <li><a href="#servicios" class="nav-link"><span class="nav-link-index">02</span><span class="nav-link-text">Servicios</span></a></li>
           <li><a href="#galeria" class="nav-link"><span class="nav-link-index">03</span><span class="nav-link-text">Galeria</span></a></li>
-          <li><a href="#contacto" class="nav-link"><span class="nav-link-index">04</span><span class="nav-link-text">Contacto</span></a></li>
+          <li><a href="#equipo" class="nav-link"><span class="nav-link-index">04</span><span class="nav-link-text">Equipo</span></a></li>
+          <li><a href="#contacto" class="nav-link"><span class="nav-link-index">05</span><span class="nav-link-text">Contacto</span></a></li>
         </ul>
         <button type="button" class="btn btn-primary btn-nav" data-wa-trigger><span>Llamar ahora</span></button>
       </nav>
@@ -3488,6 +3562,49 @@ main section[id] {
         </div>
       </div>
     </section>
+<section class="team" id="equipo">
+      <div class="container">
+        <div class="section-head section-head--center team-lead">
+          <div class="section-head-main">
+            <p class="eyebrow" data-reveal>Quiénes somos</p>
+            <h2 class="section-title" data-reveal>Un equipo de <span class="text-gold">especialistas</span>, no un call center</h2>
+          </div>
+          <p class="section-desc" data-reveal>Somos un grupo de profesionales con una meta en común: dar soluciones integrales a nuestros clientes a través de una amplia gama de servicios. Buscamos cubrir las necesidades relativas a los servicios que exigen las leyes y normas mexicanas, ya sean del área ambiental o de la higiene y salud ocupacional.</p>
+          <span class="tag" data-reveal>Eficiencia y profesionalismo</span>
+        </div>
+
+        <ul class="team-grid" data-reveal-group>
+          <li class="team-card" data-reveal>
+            <span class="team-card-index">01</span>
+            <h3 class="team-card-name">M.C. Cándido Rojas Ramón</h3>
+            <p class="team-card-role">Asesor</p>
+            <a class="team-card-contact" href="mailto:crojas.ambiental@gmail.com">crojas.ambiental@gmail.com</a>
+            <a class="team-card-contact" href="tel:+522291337334">Cel. 229 133 7334</a>
+          </li>
+          <li class="team-card" data-reveal>
+            <span class="team-card-index">02</span>
+            <h3 class="team-card-name">Ing. Norma Beatriz Nieves Pineda</h3>
+            <p class="team-card-role">Asesora</p>
+            <a class="team-card-contact" href="mailto:bpineda.ambiental@gmail.com">bpineda.ambiental@gmail.com</a>
+            <a class="team-card-contact" href="tel:+522291601608">Cel. 229 160 1608</a>
+          </li>
+          <li class="team-card" data-reveal>
+            <span class="team-card-index">03</span>
+            <h3 class="team-card-name">M.C. Flavio Guzmán Trujillo</h3>
+            <p class="team-card-role">Asesor</p>
+            <a class="team-card-contact" href="mailto:fguzman.ambiental@gmail.com">fguzman.ambiental@gmail.com</a>
+            <a class="team-card-contact" href="tel:+522291547382">Cel. 229 154 7382</a>
+          </li>
+          <li class="team-card" data-reveal>
+            <span class="team-card-index">04</span>
+            <h3 class="team-card-name">Ing. Josué Perera Jiménez</h3>
+            <p class="team-card-role">Asesor</p>
+            <a class="team-card-contact" href="mailto:jperera.ambiental@gmail.com">jperera.ambiental@gmail.com</a>
+            <a class="team-card-contact" href="tel:+529993963906">Cel. 999 396 3906</a>
+          </li>
+        </ul>
+      </div>
+    </section>
 <section class="contact has-bg" id="contacto">
       <div class="section-bg" style="background-image:url('img/10.jpg');" aria-hidden="true"></div>
       <div class="section-bg-veil" aria-hidden="true"></div>
@@ -3512,6 +3629,27 @@ main section[id] {
                 <span>Lunes a viernes de 8:00 a 18:00 hrs.</span>
               </span>
             </li>
+            <li data-reveal>
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.7.1.4 0 .8-.2 1L6.6 10.8Z"/></svg></span>
+              <span class="contact-text">
+                <span class="contact-label">Teléfono</span>
+                <a href="tel:+522296887565">229 688 7565</a>
+              </span>
+            </li>
+            <li data-reveal>
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm15.5 2.4-7 5.4a.8.8 0 0 1-1 0l-7-5.4V18h15V6.4ZM5 5.6l7 5.4 7-5.4H5Z"/></svg></span>
+              <span class="contact-text">
+                <span class="contact-label">Correo</span>
+                <a href="mailto:atencion01.ambiental@gmail.com">atencion01.ambiental@gmail.com</a>
+              </span>
+            </li>
+            <li data-reveal>
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7Zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2Z"/></svg></span>
+              <span class="contact-text">
+                <span class="contact-label">Dirección</span>
+                <span>San Cipriano No. 24, Colinas de Santa Fe<br>C.P. 91808, Veracruz, Ver.</span>
+              </span>
+            </li>
           </ul>
           <div class="contact-actions" data-reveal>
             <button type="button" class="btn btn-primary" data-wa-trigger><span>Llamar ahora</span></button>
@@ -3526,7 +3664,7 @@ main section[id] {
           </div>
         </div>
         <div class="contact-map" data-reveal="media">
-          <iframe title="Veracruz, Veracruz" src="https://www.google.com/maps?q=Veracruz%2C%20Veracruz&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="San Cipriano No. 24, Colinas de Santa Fe, Veracruz" src="https://www.google.com/maps?q=San%20Cipriano%2024%2C%20Colinas%20de%20Santa%20Fe%2C%2091808%20Veracruz%2C%20Ver.&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -3549,14 +3687,16 @@ main section[id] {
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#equipo">Equipo</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contacto</h4>
         <ul>
-          <li>Veracruz, Veracruz<br>Veracruz, Veracruz</li>
+          <li>San Cipriano No. 24, Colinas de Santa Fe<br>C.P. 91808, Veracruz, Ver.</li>
           <li><a href="https://wa.me/5212294772019" target="_blank" rel="noopener">229 477 2019</a></li>
+          <li><a href="mailto:atencion01.ambiental@gmail.com">atencion01.ambiental@gmail.com</a></li>
           <li>Lunes a viernes de 8:00 a 18:00 hrs.</li>
         </ul>
       </div>
